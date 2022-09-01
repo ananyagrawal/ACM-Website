@@ -1,1 +1,31 @@
+*{
+    padding: 0; 
+    margin: 0;/* to remove the annoying white space between the body and the header */
+}
+header
+{
+    background-image: url(/ACM-Website/Images/Background.png);/*added the main collage image in the background*/
+    background-repeat: no-repeat;
+    background-size: 1279px 343px;
+    background-color: #000000; /*setting up rest of the background as black*/
+    margin: 0;
+}
+.transbox1{
+    background-color: #000000;/* Black Transparent Box on the top */
+    opacity: 0.88;
+    width: 1279px;
+    height: 60px; 
+}
+.transbox2{
+    background-color: #4789C0;/* Blue Transparent Box in the middle */
+    opacity: 0.83;
+    width: 1279px;
+    height: 250px; 
+}
+.transbox3{
+    background-color: #000000;/*Black Transparent Box below the Blue Transparent Box*/
+    opacity: 0.88;
+    width: 1279px;
+    height: 278px; 
+}
 
