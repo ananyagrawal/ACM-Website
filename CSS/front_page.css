@@ -1,31 +1,167 @@
 *{
     padding: 0; 
-    margin: 0;/* to remove the annoying white space between the body and the header */
+    margin: 0;/* to remove the annoying white space between the page margin and the header */
 }
 header
 {
     background-image: url(/ACM-Website/Images/Background.png);/*added the main collage image in the background*/
     background-repeat: no-repeat;
     background-size: 1279px 343px;
-    background-color: #000000; /*setting up rest of the background as black*/
+    background-color: #000000; /*set the background color of header as black*/
     margin: 0;
 }
-.transbox1{
-    background-color: #000000;/* Black Transparent Box on the top */
+.transbox1{/* Black Transparent Box on the top */
+    background-color: #000000;
     opacity: 0.88;
     width: 1279px;
     height: 60px; 
 }
-.transbox2{
-    background-color: #4789C0;/* Blue Transparent Box in the middle */
+.transbox2{/* Blue Transparent Box in the middle */
+    background-color: #4789C0;
     opacity: 0.83;
     width: 1279px;
     height: 250px; 
+    display: grid;/* displaying it as grid so that all the texts and logos are in one grid*/
+    justify-content: center;
+    align-content: center;
+    row-gap: 0px;
+    grid-auto-flow: column;
 }
-.transbox3{
-    background-color: #000000;/*Black Transparent Box below the Blue Transparent Box*/
+.transbox3{/*Black Transparent Box below the Blue Transparent Box*/
+    background-color: #000000;
     opacity: 0.88;
     width: 1279px;
     height: 278px; 
 }
-
+.logo1{ /* DITU ACM SC White LOGO on the left side of the blue box*/
+    content: url(/ACM-Website/Images/logo1.png);
+    height: 100px;
+    width: 140px;
+    margin-right: 0px;
+    margin-left: 100px;
+    margin-top: 22px;
+    filter: drop-shadow(2px 2px 2px #454545);
+    animation: fadeInAnimation 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation{
+    0% {
+        opacity: 0;
+    }
+   100% {
+        opacity: 1;
+    }
+}
+.logo2{/*DITU ACM-W SC White LOGO on the right side of the blue box*/
+    content: url(/ACM-Website/Images/logo2.png);
+    height: 150px;
+    width: 240px;
+    margin-left: 0px;
+    margin-right: 50px;
+    filter: drop-shadow(2px 2px 2px #454545);
+    animation: fadeInAnimation 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.Text{/*common properties for all the text present on the blue box*/ 
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-left: 30px;
+    filter: drop-shadow(1px 1px 1px #454545);
+    animation: fadeInAnimation 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+   
+}
+.heading1{/*Setting properties for WELCOME TO Text*/
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    line-height: 0.9em;
+    color: #000000;
+}
+.heading2{/*Setting properties for DITU ACM STUDENT CHAPTER Text*/
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    color: #ffffff;
+    line-height: 1.3em;
+}
+.heading3{/*Setting properties for "ADVANCE COMPUTING AS A SCIENCE AND PROFESSION" Text*/
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 1.3em;
+}
+span{/*Setting properties for < and > symbol which is present before and after the DITU ACM STUDENT CHAPTER Text */
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 45px;
+    color: #000000;
+}
+.heading2{/*Making DITU ACM STUDENT CHAPTER Text animated with typing effect*/
+    overflow: hidden;
+    border-right: .03em solid #ffffff;
+    width: 0;
+    animation: 
+      typing 2.6s steps(30) forwards,
+      blink .85s infinite;
+}
+@keyframes typing {/*Keyframe for typing animation*/
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink {/*Keyframe for infinte blinking of the cursor*/
+    from { border-color: transparent }
+    to { border-color: #ffffff; }
+}
+.Gallery{/*setting properties for the gallery section*/
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+.item{/*setting properties for the gallery images present inside the gallery section*/
+    margin: 24px;
+    height: 175px;
+    width: 250px;
+    border-radius: 12px;
+    margin-top: 10px;
+    filter: drop-shadow(3px 3px 3px #4789C0);
+    transition: transform .2s;/*giving transition for the hover effect*/
+    animation: fadeInAnimation 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    max-width: 100%;
+}
+.item:hover{
+    box-shadow: 2px 2px 2px #0db6cc;/*to shine brighter with bluish light on being hovered*/
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.leftgallerybttn{/*setting properties for the left and right gallery buttons*/
+    background-color: transparent;
+    fill: transparent;
+    stroke: #ffffff;
+    border: transparent;
+    margin-top: 15px;
+    transform: scale(0.7);/*adjusting scaling of the gallery buttons*/
+    animation: fadeInAnimation 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.rightgallerybttn{/*setting properties for the left and right gallery buttons*/
+    background-color: transparent;
+    fill: transparent;
+    stroke: #ffffff;
+    border: transparent;
+    transform: scale(0.7);/*adjusting scaling of the gallery buttons*/
+    animation: fadeInAnimation 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
