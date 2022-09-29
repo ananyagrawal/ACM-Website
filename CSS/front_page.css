@@ -4,7 +4,7 @@
 }
 header
 {
-    background-image: url(/ACM-Website/Images/Background.png);/*added the main collage image in the background*/
+    background-image: url(/ImagesUsed/Background.png);/*added the main collage image in the background*/
     background-repeat: no-repeat;
     background-size: 1279px 343px;
     background-color: #000000; /*set the background color of header as black*/
@@ -34,10 +34,9 @@ header
     height: 278px; 
 }
 .logo1{ /* DITU ACM SC White LOGO on the left side of the blue box*/
-    content: url(/ACM-Website/Images/logo1.png);
-    height: 100px;
+    content: url(/ImagesUsed/DITU_ACM_WhiteLogo.png);
+    height: 130px;
     width: 140px;
-    margin-right: 0px;
     margin-left: 100px;
     margin-top: 22px;
     filter: drop-shadow(2px 2px 2px #454545);
@@ -54,11 +53,12 @@ header
     }
 }
 .logo2{/*DITU ACM-W SC White LOGO on the right side of the blue box*/
-    content: url(/ACM-Website/Images/logo2.png);
-    height: 150px;
-    width: 240px;
-    margin-left: 0px;
-    margin-right: 50px;
+    content: url(/ImagesUsed/ACM-W_dituChap_White.png);
+    height: 130px;
+    width: 140px;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 140px;
     filter: drop-shadow(2px 2px 2px #454545);
     animation: fadeInAnimation 2s;
     animation-iteration-count: 1;
