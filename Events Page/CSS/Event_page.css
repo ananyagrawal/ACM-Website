@@ -1,0 +1,282 @@
+/*Mainly headings for Event page*/
+
+/*TO BE REPLACED*/
+/*Just a default block to replace nav bar and footer*/
+.nav-bar{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 68px;
+    background-color: black;
+    display:block;
+}
+/*TO BE REPLACED*/
+
+/*Main Styling for Heading of the Page*/
+header{
+    margin-top:0px;
+    margin-bottom: 0px;
+    background: rgba(2, 119, 217, 0.83);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 95px;
+
+    font-family: 'Noto Sans',Arial;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 82px;
+    display: flex;
+    color: #F5F5F5;
+    border: 1px solid #4789C0;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    justify-content: center; 
+    align-items: center;
+}
+
+/*Styling for the two Sub Headings of the page*/
+.heading{
+
+    width: 423px;
+    height: 78.3px;
+
+    margin-bottom: 0px;
+    background: #4789C0;
+    box-shadow: 0px 4px 36px rgba(0, 0, 0, 0.25);
+    border-radius: 27px;
+
+    font-family: 'Noto Sans Arabic',Arial;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 87px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9FCFF;
+
+    /*Need to check the right value for the below style to add a good effect to the text*/
+    /* text-shadow: 0px 4px 30px; */
+}
+
+/*Main container for each sub heading*/
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/*Upcoming Events CSS*/
+
+/*Main container element for the 3 column event grid*/
+.upcoming-events-container{
+    display: grid;
+    grid-template-columns: 347.894px 347.894px 347.894px;
+    justify-content: space-evenly;
+    row-gap: 40px;
+}
+
+/*Changing the grid of Main container with media query if the window is resized*/
+
+@media (max-width:760px){
+    .upcoming-events-container{
+        grid-template-columns: 347.894px ;
+    }
+
+}
+@media (max-width:1190px) and (min-width: 760px){
+    .upcoming-events-container{
+        grid-template-columns: 347.894px 347.894px ;
+    }
+}
+
+/*Container 1 for the image*/
+.inner1-upcoming-event{
+    display: flex;
+    flex-direction: row;
+    height: 191.688px;
+    width: 148.094px;
+}
+
+/*Container 2 for the text besideit*/
+.inner2-upcoming-event{
+    display: flex;
+    flex-direction: column;
+    height: 191.688px;
+    width: 199.8px;
+    background-color: rgba(212, 211, 211, 0.192);
+}
+
+/*The main template and container for the container 1,2 above*/
+.upcoming-event{
+    display:flex;
+    flex-direction: row;
+    width:347.894px;
+    margin-right: 3px;
+    margin-left: 3px;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+/*Hovering effect for the Upcoming event template*/
+.upcoming-event:hover{
+    box-shadow: 0px 2px 7px 2px rgba(17, 52, 207, 0.432);
+    transition: box-shadow 1s;
+    transform: scale(1.1); 
+    transition: transform .3s ease-in-out;
+    cursor: pointer;
+}
+
+/*Text Style for the Event Name inside the upcoming event template*/
+.text-style-1{
+    font-family: 'Poppins',Arial;
+    font-weight: 600;
+    font-size: 18.9px ;
+    line-height: 28.35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Text Style for the Event description inside the upcoming event template*/
+.text-style-2{
+    font-family: 'Poppins',Arial;
+    font-weight: 400;
+    font-size: 12.15px ;
+    line-height: 18.225px;
+    display: flex;
+    padding-left: 4px;
+    padding-right: 3px;
+}
+
+
+
+
+/*Completed Events CSS*/
+
+/*Main container element for the 3 column event grid*/
+.completed-events-container{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    justify-content: space-evenly;  /*Even spacing*/
+    row-gap: 50px;  /*Decent Row gap to avoid clash*/
+}
+
+/*Changing the grid of Main container with media query if the window is resized*/
+@media (max-width:965px) and (min-width: 730px){
+    .completed-events-container{
+        grid-template-columns: 250px 250px ;
+    }
+}
+@media (max-width:730px){
+    .completed-events-container{
+        grid-template-columns: 250px ;
+    }
+
+}
+
+/*Template for a completed event*/
+.completed-event{
+    width: 250px;
+    display: flex;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+    padding:0px;
+}
+
+/*Adding Extra hovering effects*/
+.completed-event:hover{
+    box-shadow: 0px 2px 7px 2px rgba(17, 52, 207, 0.432); /*Blueish Box shadow */
+    transition: box-shadow 1s; /*A comparatively Slow transition for a good effect*/
+    transform: scale(1.1); /*Pop out effect for the template , template will scale to 110% */
+    transition: transform 0.3s ease-in-out; /*Fast transition*/
+    cursor: pointer; /*In future we have to add details or text or connect the template to another link*/
+}
+
+/*Black Left arrow for the button*/
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent; 
+    
+    border-right:7px solid black; 
+}
+
+/*Black Right arrow for the button*/
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    
+    border-left: 7px solid black;
+}
+
+/*Text style for the button*/
+.text-style-3{
+    font-family: 'Noto Sans Arabic',Arial;
+    font-weight: 600;
+    font-size: 12px ;
+    line-height: 28.35px;
+    margin-top: 0px;
+    margin-left: 18px; /*margin spacing to lengthen the button*/
+    margin-right: 18px;
+    margin-bottom: 0px;
+    display: inline-block;  /*To keep the text in the same line as the arrows*/
+    justify-content: center;  /*Making sure the text is centered*/
+    align-items: center;
+}
+
+/*Removing the default border and background color of buttons so that it doesnt clash with the container border*/
+.triangle-button-left,.triangle-button-right{
+    border:none;
+    background:none;
+}
+
+/*Container element for button*/
+.outer{
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+}
+
+/*Container element to combine the text with the two buttons*/
+.double-button{
+    border-style: solid;
+    border-width: 1px;
+    height: 28px;
+    display:flex;
+    background-color: #d9d9d9;
+    border-radius: 12px; /*Adding a curve to the border*/
+}
+
+/*Hover effect*/
+.double-button:hover{
+    background-color: white;
+    border-color: black;
+}
+.outer:hover, .triangle-button-left:hover, .triangle-button-right:hover, .arrow-left:hover, .arrow-right:hover{
+    cursor: pointer; /*Changing cursor to pointer for every part of the button*/
+}
+
+/*Click Effect*/
+.double-button:active{
+    background-color: white;
+    color:black;
+}
+.triangle-button-left:active{
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+}
+.triangle-button-right:active{
+    border-left-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+
+
+
