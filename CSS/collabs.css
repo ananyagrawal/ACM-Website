@@ -1,1 +1,31 @@
+.collab_main{
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+    justify-content:space-evenly;
 
+}
+.collab_element{
+    display:flex;
+    margin-right: 30px;
+}
+
+ /*div containing collabs-text*/
+.collabs-heading{
+  font-family: 'Noto Sans',Arial;
+  display:flex;
+  flex-direction: row;
+  color:#4789C0;
+  align-items: center;
+  margin-left:80px;
+  margin-right:80px;
+}
+.collabs-text{
+  font-size:36px;
+  font-weight:bold;
+}
+
+.marquee_css{
+  margin-left:80px;
+  margin-right:80px;
+}
