@@ -1,1 +1,287 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+}
 
+/* Styles for counter section */
+
+.section-counter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: rgba(71, 137, 192, 1);
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+  height: 100px;
+}
+.establishment-year,
+.members-count,
+.event-count {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: center;
+}
+.establishment-year {
+  width: 40%;
+}
+.members-count {
+  width: 30%;
+}
+.event-count {
+  width: 30%;
+}
+.counter-icon {
+  height: 50px;
+  fill: white;
+  color: white;
+}
+.increasing-number {
+  font-size: 24px;
+  font-weight: 700;
+}
+.section-title {
+  font-size: 20px;
+  width: 100px;
+}
+
+/* Styles for membership section */
+
+.membership-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(http://drive.google.com/uc?export=view&id=1NfWKHRMrdhuFJPlu18TybdZhAsNOa8K2);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+.membership-content {
+  display: inline-block;
+  width: 80%;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.41);
+  border-radius: 15px;
+  padding: 20px 20px 20px 20px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+/* get membership button */
+.membership-button {
+  border-style: none;
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.41);
+  padding: 10px 16px 10px 16px;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.membership-button:hover {
+  background-color: rgba(71, 137, 192, 1);
+}
+
+/* Styles for footer */
+
+.footer-container {
+  width: auto;
+  height: auto;
+  /* height: 400px; */
+  background-color: rgba(71, 137, 192, 1);
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  padding-left: 5%;
+  padding-right: 5%;
+  border-top: 1px solid rgba(71, 137, 192, 1);
+}
+.footer-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.footer-info {
+  /* width: 360px; */
+  /* padding-left: 80px; */
+  /* flex: 1; */
+  width: 33%;
+}
+.footer-logo {
+  /* width: 8vw; */
+  display: grid;
+  grid-template-columns: 70px 70px;
+  align-items: center;
+}
+.footer-about {
+  /* width: 320px; */
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer-acm-logo {
+  width: 70px;
+}
+.footer-acmw-logo {
+  width: 70px;
+}
+.footer-social {
+  padding: 4px 4px 4px 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.footer-social a {
+  color: white;
+  text-decoration: none;
+  padding: 4px 4px 4px 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.vertical-line {
+  border-left: 2px solid white;
+  /* height: 200px; */
+}
+.sitemap-container {
+  /* padding-left: 80px; */
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* flex: 1; */
+  width: 33%;
+  /* text-align: center; */
+}
+.sitemap-heading {
+  padding-left: 28%;
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer-sitemap {
+  display: flex;
+  flex-direction: row;
+  gap: 16%;
+  /* width: 360px; */
+  margin-top: 30px;
+  justify-content: center;
+}
+.footer-sitemap li {
+  list-style: none;
+}
+.footer-sitemap a {
+  color: white;
+  text-decoration: none;
+  font-weight: 300;
+}
+.sitemap-left,
+.sitemap-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+.footer-contact {
+  /* width: 360px; */
+  padding-top: 20px;
+  /* flex: 1; */
+  width: 33%;
+}
+.footer-heading {
+  font-weight: 500;
+  font-size: 20px;
+}
+.footer-detail-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.footer-mail,
+.footer-phone,
+.footer-direction {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-mail a,
+.footer-phone a,
+.footer-direction a {
+  color: white;
+}
+.footer-bottom-border {
+  width: 94%;
+  margin: auto;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+}
+
+/* media queries */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .section-counter {
+    height: 250px;
+    flex-direction: column;
+  }
+  .footer-top {
+    flex-direction: column;
+  }
+  .sitemap-container {
+    display: none;
+  }
+  .footer-info,
+  .footer-contact {
+    width: 100%;
+  }
+  .footer-detail-container {
+    margin-top: 10px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .section-counter {
+    height: 250px;
+    flex-direction: column;
+  }
+  .footer-info {
+    width: 48%;
+    padding-right: 2%;
+  }
+  .sitemap-container {
+    display: none;
+  }
+  .footer-contact {
+    width: 48%;
+    padding-left: 2%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .section-counter {
+    height: 160px;
+  }
+  .establishment-year {
+    width: 55%;
+  }
+  .members-count {
+    width: 45%;
+  }
+  .event-count {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
