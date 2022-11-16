@@ -2,14 +2,39 @@
 .flex{
     display:flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
-#Ditu{
+#H{
+    display: flex;
+    flex-direction: row;
+    color: #4789C0;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+/* for drawing a line with About heading */
+#Line{
+    border-bottom: 1px inset #4789C0;
+    flex: 1;
+    height: 0;
+    width:70%;
+
+}
+/* for all text in the about section */
+.All-Text{
+    width:75%;
+}
+/* for all images in the about section */
+.all-img{
     width:25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* flex is for making one para's display to flex including its image */
 .about{
     /* About heading */
+    width:30%;
     color:#4789C0;
     font-size:36px;
     padding-bottom:40px;
@@ -29,23 +54,26 @@
     padding-right: 3.125rem;
     margin:0px;
     /* width: 15.625rem; */
-    width:auto;
-    height : 12.5rem;
-    align-items:center center;
+    width:15.625rem;
+    height : auto;
+    /* align-items:center center; */
+   
 }
 .rimg{
     /* for all right images */
     padding-right: 6.25rem;
     padding-left: 3.125rem ;
     margin:0px;
-    width: 15.625rem;
-    height : 12.5rem;
-    align-items:center center;
+    /* width: 15.625rem; */
+    width:15.625rem;
+    height : auto;
+    /* align-items:center center; */
+    
 }
 .LeftText{
     /* for all left text dimensions */
 padding-left: 6.25rem;
-width:62.5rem;
+width:68.75rem;
 padding-bottom:20px;
 
 }
@@ -53,7 +81,7 @@ padding-bottom:20px;
      /* for all right text dimensions */
     padding-right: 6.25rem;
     /* width: 62.5rem; */
-    width:62.5rem;
+    width:68.75rem;
     padding-bottom:20px;
 }
 
