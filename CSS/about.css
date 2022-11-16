@@ -31,6 +31,7 @@
     /* width: 15.625rem; */
     width:auto;
     height : 12.5rem;
+    align-items:center center;
 }
 .rimg{
     /* for all right images */
@@ -39,6 +40,7 @@
     margin:0px;
     width: 15.625rem;
     height : 12.5rem;
+    align-items:center center;
 }
 .LeftText{
     /* for all left text dimensions */
