@@ -207,6 +207,18 @@ color: #928F8F;
 }
 .Contactinp:hover{
   border-color: #0277D9;
+  
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 label {
   /* designing for the label */
@@ -287,10 +299,14 @@ label {
     font-style: normal;
     overflow-wrap: break-word;
     font-size: 3vw;
-
+    margin-top: 10px;
+    border-color: #0277D9;
     
     width: 31vw;
     border-radius: 1.3vw 1.3vw 1.3vw 1.3vw;
     
     color: #fff;
+  }
+  .Contactsubmit:hover{
+    cursor: pointer;
   }
