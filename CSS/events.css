@@ -70,7 +70,7 @@ border: 1px solid #4789C0;
     .Eventscard2{
         display: none;
     }
-    #poster{
+    /* #poster{
         position: relative;
     width: 24vw !important;
     height: 30vw !important;
@@ -79,7 +79,7 @@ border: 1px solid #4789C0;
     left: 0;
     top:0;
     
-    } 
+    }  */
     .Eventstext{
         
         display: block;
