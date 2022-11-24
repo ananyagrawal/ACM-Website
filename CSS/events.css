@@ -11,10 +11,8 @@ text-decoration: none;
 .EventsEvent{
     /* styling for the events text */
    margin-top: 0vw;
-
-    
-    top: 2vw;
-    position: relative;
+   top: 2vw;
+position: relative;
 
 
 
@@ -305,6 +303,7 @@ color: #4789C0;
 }
 .Eventsne{
     color: #4789C0;
+    cursor: pointer;
 }
 a, a:visited, a:hover, a:active {
    /* disabling color change due to anchor tag */
