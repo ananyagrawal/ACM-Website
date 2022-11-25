@@ -49,7 +49,7 @@ border: 1px solid #4789C0;
  transform: rotate(-0.04deg);
 }
 /* responsiveness for phone  layout */
-@media(min-width:320px) and (max-width: 480px){
+/* @media(min-width:320px) and (max-width: 480px){
     .EventsHeading{
         position: relative;
         align-items: center;
@@ -77,7 +77,7 @@ border: 1px solid #4789C0;
     left: 0;
     top:0;
     
-    }  */
+    }  *//*
     .Eventstext{
         
         display: block;
@@ -104,9 +104,9 @@ border: 1px solid #4789C0;
         color: #4789C0;
         
     }
-}
+} */
 /* resonsiveness for tab view */
-@media(min-width:481px) and (max-width: 768px){
+/* @media(min-width:481px) and (max-width: 768px){
 .Eventsnewev{
     left: 35vw !important;
     color: #4789C0;
@@ -117,7 +117,7 @@ border: 1px solid #4789C0;
 .Eventsne{
     color: #4789C0 !important;
 }
-}
+} */
 .Eventscards{
     position: relative;
     top: -8vw;
