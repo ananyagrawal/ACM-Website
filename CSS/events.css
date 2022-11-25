@@ -1,20 +1,18 @@
 *{
-
+text-decoration: none;
 }
 
 .EventsHeading{
     /* styling for the events heading */
     top: 0vw;
-    position: absolute;
-    left: 3vw;
+    position: relative;
+    left: 80px;
 }
 .EventsEvent{
     /* styling for the events text */
    margin-top: 0vw;
-
-
-    top: 0vw;
-    position: absolute;
+   top: 2vw;
+position: relative;
 
 
 
@@ -23,7 +21,7 @@
     font-family: 'Noto Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 4vw;
+    font-size: 36px;
 
     /* identical to box height */
 
@@ -42,9 +40,9 @@
     /* styling for the horizontal rule */
 
 width: 75vw;
-top: 0vw;
-left: 14vw ;
-position: absolute;
+top: -1.5vw;
+left: 10vw ;
+position: relative;
 margin-top: 3vw ;
 border: 1px solid #4789C0;
 
@@ -70,8 +68,8 @@ border: 1px solid #4789C0;
     .Eventscard2{
         display: none;
     }
-    #poster{
-        position: absolute;
+    /* #poster{
+        position: relative;
     width: 24vw !important;
     height: 30vw !important;
     border-radius: 1.5vw 0vw 0vw 1.5vw;
@@ -79,7 +77,7 @@ border: 1px solid #4789C0;
     left: 0;
     top:0;
     
-    } 
+    }  */
     .Eventstext{
         
         display: block;
@@ -127,11 +125,11 @@ border: 1px solid #4789C0;
 
 .Eventscontainer{
     /* styling for the card container */
-    position: absolute;
+    position: relative;
     width: auto;
 height: auto;
-margin-left: 16vw;
-top: 10vw;
+left: 17vw;
+top: 3vw;
 font-family: 'Noto Sans', sans-serif;
 font-style: normal;
 overflow-wrap: break-word;
@@ -147,7 +145,7 @@ display: flex;
 }
 .Eventscard1{
     /* styling for  card 1 */
-    position: absolute;
+    position: relative;
     width: 30vw;
 height: 17vw;
 margin-left: 0;
@@ -190,7 +188,8 @@ display: flex;
 #con{
     /* styling for the content of card */
     font-weight: normal;
-    margin-left: 1vw;
+    margin-left: 0;
+    width: 15vw;
 
 
 }
@@ -200,23 +199,33 @@ display: flex;
     /* padding-left: 10vw; */
 
 /* } */
-#poster{
+#poster1{
     /* styling for the poster */
-    position: absolute;
+    position: relative;
+width: 14vw;
+height: 17vw;
+border-radius: 1.5vw 0vw 0vw 1.5vw;
+align-items: left;
+left: -31vw;
+top:0;
+
+} 
+#poster2{
+    position: relative;
 width: 14vw;
 height: 17vw;
 border-radius: 1.5vw 0vw 0vw 1.5vw;
 align-items: left;
 left: 0;
-top:0;
+top:-11.2vw;
 
-} 
+}
 .Eventscard2{
     /* styling for the second card */
-    position: absolute;
+    position: relative;
     width: 30vw;
 height: 17vw;
-left: 35vw;
+left: 5vw;
 
 font-family: 'Noto Sans', sans-serif;
 font-style: normal;
@@ -243,10 +252,10 @@ transition: transform .5s;
     /* styling for the right svg */
     box-sizing: border-box;
 
-    position: absolute;
+    position: relative;
 
-    left: 91vw;
-    top: 24vw;
+    left: 88vw;
+    top: 0.5w;
 
     transition: transform 0.3s;
     background: #F9FCFF;
@@ -259,13 +268,13 @@ transition: transform .5s;
     /* styling for the left svg */
     box-sizing: border-box;
 
-    position: absolute;
+    position: relative;
     left: 6vw;
 
-    top: 24vw;
+    top: 0.5vw;
 
     transition: transform 0.4s;
-    background: #F9FCFF;
+    background: #F9FCFF;;
 
 }
 #left:hover{
@@ -273,18 +282,19 @@ transition: transform .5s;
 }
 .Eventsnewev{
 /* sstyling for the more events anchor */
-    position: absolute;
+    position: relative;
 width: fit-content;
 height: 2vw;
-left: 78vw;
-top: 39vw;
+left: 82vw;
+top: 8vw;
+margin-bottom: 3vw;
 
 /* H3 */
 
 font-family: 'Noto Sans', sans-serif;
 font-style: normal;
 font-weight: 700;
-font-size: 1vw;
+font-size: 0.8vw;
 line-height: 4vw;
 
 /* Primary */
@@ -293,6 +303,7 @@ color: #4789C0;
 }
 .Eventsne{
     color: #4789C0;
+    cursor: pointer;
 }
 a, a:visited, a:hover, a:active {
    /* disabling color change due to anchor tag */
