@@ -203,37 +203,41 @@
 
     <!-- Events Section -->
     <div  class="EventsEvents"><!-- parent div for all the elements  -->
-            <div class="EventsHeading"><!-- divv for storing the Events  -->
-                <h1 class="EventsEvent"><label for="hi">Events </label></h1>
-                <hr class="Eventshori" id="hi">
-                
-            </div>
-            <div class="Eventscontainer"><!-- container div for the cards -->
-                <a href="#">
-                <div class="Eventscard1"><!-- div for the card 1 -->
-                <div class="Eventstext"><!-- text div inside the card -->
-                    <h1 class="Eventsh">Git Hub</h1>
-                    <h3  id="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, aliquid illum sed delectus maiores velit tempore voluptatibus minus, voluptas repudiandae error ab ipsam, corrupti quidem molestias quam dicta saepe magni?</h3>
-                </div>
-                
-                
-                <img src="Images/Events@Frontpage.jpeg" alt="Image not available" id="poster1"><!-- image for the card1 -->
-                </div>
+      <div class="events-heading">
+        <p class="events-text">
+            Events&#160
+        </p>
+        <hr class="horizontal-line"> <!--To create horizontal line after Projects-->
+    </div>
+            <!-- -------------xxxxxxx------------- -->
+            <div class="Eventscontainer">
+              
+              <!-- container div for the cards -->
+
+              <div class="event_center">
+                <a href="#"><!-- div for the card 1 -->
+                  <div class="Eventscard">
+                      <img src="Images/Events@Frontpage.jpeg" alt="Image not available" id="poster">
+                      <div class="Eventstext"><!-- text div inside the card -->
+                         <h1 class="Eventsh">Git Hub</h1>
+                         <p  id="con">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, aliquid illum sed delectus maiores velit tempore voluptatibus minus, voluptas repudiandae error ab ipsam, corrupti quidem molestias quam dicta saepe magni?</p>
+                      </div>              
+                  </div>
+                </a>
+              <a href="#">
+              <div class="Eventscard"><!-- div for the card 2 -->
+                  <img src="Images/Events@Frontpage.jpeg" alt="image not available" id="poster">
+                  <div class="Eventstext"><!-- text div inside the card -->
+                      <h1 class="Eventsh">LINKEDIN </h1>
+                      <p id="con">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eos possimus rerum quisquam obcaecati numquam, voluptates, ab nobis consequuntur excepturi quasi! A velit animi expedita odio voluptates, magni natus ipsum!
+                     </p>
+                  </div> 
+              </div>
             </a>
-            <a href="#">
-            <div class="Eventscard2"><!-- div for the card 2 -->
-                <div class="Eventstext"><!-- text div inside the card -->
-                    <h1 class="Eventsh">LINKEDIN
-                        </h1>
-                <h3 id="con">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim eos possimus rerum quisquam obcaecati numquam, voluptates, ab nobis consequuntur excepturi quasi! A velit animi expedita odio voluptates, magni natus ipsum!
-                </h3>
-                </div>
-                <img src="Images/Events@Frontpage.jpeg" alt="image not available" id="poster2"><!-- image for the card 2 -->
-            
-                
-            </div>
-        </a>
-            </div>
+              </div>
+              
+
+        </div>
         <div class="Eventscards">
             <svg width="2vw" height="4vw" viewBox="0 0 25 54" fill="none" xmlns="http://www.w3.org/2000/svg" id="left">
                 <path d="M4.27367 31.7132H4.27923L2.28579 29.2659C2.06461 28.9943 1.86482 28.6304 1.72112 28.1859L0.293844 28.6473L1.72112 28.1859C1.57779 27.7425 1.5 27.2484 1.5 26.74C1.5 26.2316 1.57779 25.7374 1.72112 25.294C1.86482 24.8495 2.06461 24.4856 2.28579 24.2141L2.28648 24.2132L20.2783 2.09166L20.2788 2.09102C20.5769 1.72411 20.8756 1.56744 21.1031 1.52019C21.3165 1.4759 21.5586 1.50687 21.8287 1.6791C22.1144 1.86128 22.4291 2.2057 22.6752 2.74273C22.9197 3.27646 23.0618 3.92894 23.0614 4.61749V4.61841V48.8615C23.0614 50.4556 22.3962 51.4358 21.8279 51.7985C21.5556 51.9723 21.317 52.0071 21.1208 51.9729C20.9264 51.939 20.6249 51.8109 20.2821 51.3889L20.2814 51.3881L4.27367 31.7132Z" fill="#F9FCFF" stroke="black" stroke-width="3"/>
@@ -242,13 +246,10 @@
             <svg width="2vw" height="4vw" viewBox="0 0 26 54" fill="none" xmlns="http://www.w3.org/2000/svg" alt="svg not available" id="right">
                 <path d="M20.8419 31.7135H20.8474L4.84092 51.3902L4.84024 51.3911C4.49743 51.8131 4.196 51.9412 4.00171 51.975C3.8056 52.0092 3.5671 51.9745 3.29486 51.8007C2.72673 51.438 2.06152 50.4576 2.06152 48.8633L2.06152 4.61681L2.06152 4.6159C2.0611 3.92723 2.20314 3.27466 2.44768 2.74085C2.69373 2.20374 3.0085 1.85929 3.29414 1.67712C3.56417 1.5049 3.80611 1.47396 4.01935 1.51823C4.24682 1.56546 4.54545 1.7221 4.84352 2.08906L4.84404 2.0897L22.8342 24.2129L22.8349 24.2138C23.0561 24.4854 23.2559 24.8493 23.3996 25.2939C23.5429 25.7374 23.6207 26.2316 23.6207 26.7401C23.6207 27.2485 23.5429 27.7427 23.3996 28.1862C23.2559 28.6308 23.0561 28.9947 22.8349 29.2663L20.8419 31.7135Z" fill="#F9FCFF" stroke="black" stroke-width="3"/>
                 </svg><!-- right button -->
-                <div class="Eventsnewev"><!-- div for new more events -->
-                    <h1 class="Eventsne"><a href="#">View All Events</a>
-                        </h1>
-                
-                
-        </div>
     </div>
+    <div class="Eventsnewev"><!-- div for new more events -->
+      <a href="#"><h2 class="Eventsne">View All Events</h2></a>
+  </div>
 
 
 
