@@ -1,10 +1,5 @@
 /* ABOUT SECTION CSS CODE */
-.flex{
-    display:flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-}
-#H{
+.about-heading{
     display: flex;
     flex-direction: row;
     color: #4789C0;
@@ -13,241 +8,67 @@
     margin-right: 80px;
 }
 /* for drawing a line with About heading */
-#Line{
+.about-line{
     border-bottom: 1px inset #4789C0;
     flex: 1;
     height: 0;
     width:70%;
-
+}
+.about-sub-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 40px;
 }
 /* for all text in the about section */
-.All-Text{
-    width:75%;
+.about-description-container{
+    width:68%;
 }
 /* for all images in the about section */
-.all-img{
-    width:25%;
+.about-img-container{
+    width:32%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 /* flex is for making one para's display to flex including its image */
-.about{
+.about-h1-text{
     /* About heading */
     width:30%;
     color:#4789C0;
     font-size:36px;
-    padding-bottom:40px;
-}
-.head{
-    /* Para headings */
-    color:#4789C0;
-    width: 62.5rem;
-    margin: 0px;
-    padding: 0px;
-    font-size:28px;
-    padding-bottom:30px;
-}
-.limg{
-     /* for all left images */
-    padding-left: 6.25rem;
-    padding-right: 3.125rem;
-    margin:0px;
-    /* width: 15.625rem; */
-    width:15.625rem;
-    height : auto;
-    /* align-items:center center; */
-   
-}
-.rimg{
-    /* for all right images */
-    padding-right: 6.25rem;
-    padding-left: 3.125rem ;
-    margin:0px;
-    /* width: 15.625rem; */
-    width:15.625rem;
-    height : auto;
-    /* align-items:center center; */
-    
-}
-.LeftText{
-    /* for all left text dimensions */
-padding-left: 6.25rem;
-width:68.75rem;
-padding-bottom:20px;
-
-}
-.RightText{
-     /* for all right text dimensions */
-    padding-right: 6.25rem;
-    /* width: 62.5rem; */
-    width:68.75rem;
     padding-bottom:20px;
 }
-
-/*Responsive code using media query attribute */
-@media (max-width:1500px) and (min-width: 1025px)
-{
-    html{
-        font-size: 80%;
-        }
-        .limg{
-            /* for all left images */
-           padding-left: 6.25rem;
-           padding-right: 3.125rem;
-           margin:0px;
-           width: 15.625rem;
-           height : 12.5rem;
-       }
-       .rimg{
-           /* for all right images */
-           padding-right: 6.25rem;
-           padding-left: 3.125rem ;
-           margin:0px;
-           width: 15.625rem;
-           height : 12.5rem;
-       }
-       .LeftText{
-           /* for all left text dimensions */
-       padding-left: 6.25rem;
-       width:80%;
-       
-       }
-       .RightText{
-            /* for all right text dimensions */
-           padding-right: 6.25rem;
-           width: 80%;
-       }
+.about-sub-heading{
+    /* Para headings */
+    color:#4789C0;
+    margin: 0px;
+    padding: 0px;
+    text-align: initial;
+    font-size:28px;
+    padding-bottom:10px;
 }
-@media (max-width:1024px) and (min-width: 769px)
-{
-    html{
-        font-size: 70%;
-        }
-    .limg{
-        /* for all left images */
-       padding-left: 3.125rem;
-       padding-right: 1.5625rem;
-       margin:0px;
-       width: 7.8125rem;
-       height : 6.25rem;
-   }
-   .rimg{
-       /* for all right images */
-       padding-right: 3.125rem;
-       padding-left: 1.5625rem ;
-       margin:0px;
-       width: 7.8125rem;
-       height : 6.25rem;
-   }
-   .LeftText{
-       /* for all left text dimensions */
-   padding-left: 3.125rem;
-   width:93%;
-   
-   }
-   .RightText{
-        /* for all right text dimensions */
-       padding-right: 3.125rem;
-       width: 93%;
-   }
+.about-logo-image{
+     /* for all images */
+    margin:0px;
+    width: 250px;
+    height : auto;
 }
-@media (max-width:768px) and (min-width: 481px)
-{
-    html{
-        font-size: 50%;
-        }
-        .limg{
-            /* for all left images */
-           padding-left: 3.125rem;
-           padding-right: 1.5625rem;
-           margin:0px;
-           width: 7.8125rem;
-           height : 6.25rem;
-       }
-       .rimg{
-           /* for all right images */
-           padding-right: 3.125rem;
-           padding-left: 1.5625rem ;
-           margin:0px;
-           width: 7.8125rem;
-           height : 6.25rem;
-       }
-       .LeftText{
-           /* for all left text dimensions */
-       padding-left: 3.125rem;
-       width:93%;
-       
-       }
-       .RightText{
-            /* for all right text dimensions */
-           padding-right: 3.125rem;
-           width: 93%;
-       }
+.about-description-text{
+     /* for all text dimensions */
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom:20px;
 }
-@media (max-width:480px) and (min-width: 300px)
-{
-    html{
-        font-size: 30%;
-        }
-        .limg{
-            /* for all left images */
-           padding-left: 3.125rem;
-           padding-right: 1.5625rem;
-           margin:0px;
-           width: 7.8125rem;
-           height : 6.25rem;
-       }
-       .rimg{
-           /* for all right images */
-           padding-right: 3.125rem;
-           padding-left: 1.5625rem ;
-           margin:0px;
-           width: 7.8125rem;
-           height : 6.25rem;
-       }
-       .LeftText{
-           /* for all left text dimensions */
-       padding-left: 3.125rem;
-       width:93%;
-       
-       }
-       .RightText{
-            /* for all right text dimensions */
-           padding-right: 3.125rem;
-           width: 93%;
-       }
+.about-text-paragraph{
+    font-size: 18px;
 }
-@media (max-width:299px) and (min-width: 100px)
-{
-    html{
-        font-size: 20%;
-        }
-        .limg{
-            /* for all left images */
-           padding-left: 3.125rem;
-           padding-right: 1.5625rem;
-           margin:0px;
-           width: 7.8125rem;
-           height : 6.25rem;
-       }
-       .rimg{
-           /* for all right images */
-           padding-right: 3.125rem;
-           padding-left: 1.5625rem ;
-           margin:0px;
-           width: 7.8125rem;
-           height : 6.25rem;
-       }
-       .LeftText{
-           /* for all left text dimensions */
-       padding-left: 3.125rem;
-       width:93%;
-       
-       }
-       .RightText{
-            /* for all right text dimensions */
-           padding-right: 3.125rem;
-           width: 93%;
-       }
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .about-logo-image{
+        width: 200px;
+    }
+    .about-text-paragraph{
+        font-size: 16px;
+    }
 }
