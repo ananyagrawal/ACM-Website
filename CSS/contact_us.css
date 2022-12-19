@@ -1,214 +1,116 @@
-*{
-
-
-}
-
-.Contactheader{
+.contact-us-heading {
   /* styling for the heading contact us */
-    align-self: center;
-    align-items: center;
-    
-}
-@media(min-width:320px)and (max-width:480px){
-  /* responsiveness for mobile view */
- body{
-    display: block !important;
- }
- .Contactgmap{
-  border-radius: 1.5vw 1.5vw 1.5vw 1.5vw !important;
-  width: 63vw !important;
-  height: 30vw !important;
-}
-.Contactmap{
-position: relative !important;
-left: 18vw !important;
-align-self: center !important;
-align-items: center !important;
-  width: 70vw !important;
+  display: flex;
+  justify-content: center;
 }
 
- 
- .Contactform{
-    position: relative !important;
-    top: 4vw !important;
-    left: 17vw !important;
-
-    
- }
- .Contactinp{
-    width: 55vw !important;
- }
- .Contactsubmit{
-    left: 14vw;
- }
- label {
-  position: relative !important;
-  top: 0vw !important;
-  
+.contact-heading {
+  /* text styling for the contact us heading */
+  background-color: #0277d9;
+  font-style: normal;
+  font-size: 2.4vw;
+  border-radius: 1.3vw 1.3vw 1.3vw 1.3vw;
+  box-shadow: 0vw 0.5vw 0.5vw rgba(0, 0, 0, 0.25);
+  color: #fff;
+  padding: 8px 16px 8px 16px;
 }
-.Contacttextareaicon{
-  position: relative !important;
-  top: -8vw !important;
-  left: 7vw !important;
+.contact-subcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  margin-top: 40px;
 }
- label > .Contacticon {
-  position: relative !important;
-  top: 3vw !important;
-  left: 6.2vw !important;
+.contact-map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
+.contact-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-@media(min-width:480px)and (max-width:768px){
-  /* responsiveness */
-  body{
-
-    display: block !important;
- }
- .Contactgmap{
-  border-radius: 1.5vw 1.5vw 1.5vw 1.5vw !important;
-    width: 63vw !important;
-    height: 32vw !important;
- }
- .Contactmap{
-  position: relative !important;
-  left: 18vw !important;
-  align-self: center !important;
-  align-items: center !important;
-    width: 70vw !important;
- }
- 
- .Contactform{
-    position: relative;
-    top: 6vw !important;
-    left: 17vw !important;
-
-    
- }
- .Contactinp{
-    width: 55vw !important;
- }
- .Contactsubmit{
-    left: 14vw;
- }
- label {
-  position: relative !important;
-  top: 0vw !important;
-  
-}
-.Contacttextareaicon{
-  position: relative !important;
-  top: -8vw !important;
-  left: 7vw !important;
-}
- label > .Contacticon {
-  position: relative !important;
-  top: 3vw !important;
-  left: 6.2vw !important;
-}
-}
-@media(min-width:769px)and (max-width:1024px){
-    .Contactform{
-      position: relative;
-      top: -3vw !important;
-    }
-}
-@media(min-width:1025px)and (max-width:1200px){
-  .Contactform{
-    position: relative;
-    top: -2vw !important;
-  }
-}
-@media(min-width:1201px){
-    
-}
-.Contactt{
-   /* text styling for the contact us heading */
-    position: relative;
-    align-items: center;
-    background-color: #0277D9;
-
-    font-family: 'Noto Sans', sans-serif;
-    font-style: normal;
-    overflow-wrap: break-word;
-    font-size: 3vw;
-    
-
-    left: 38vw;
-    width: fit-content;
-    border-radius: 1.3vw 1.3vw 1.3vw 1.3vw;
-    box-shadow: 0vw 1vw 0.5vw  rgba(0, 0, 0, 0.25);
-    color: #fff;
-}
-.Contactdis{
-  /* display property for the divs */
-    display: inline-block;
-    
-}
-.Contactmap{
-    /* styling for the map  div */
-    position: relative;
-    align-self: center;
-    left: 14vw;
-    top: 4vw;
-    width: max-content;
-    height: max-content;
-    width: 35vw;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    
-    
-    
-    
-}
-.Contactgmap{
+.Contactgmap {
   /*styling for the map */
-    border-color: #4789C0;
-    
-    border-radius: 1.3vw 1.3vw 1.3vw 1.3vw;
-    width: 30vw;
-    height: 25vw;
-    
-    
-    
-    
+  border-color: #4789c0;
+  border-radius: 1.3vw 1.3vw 1.3vw 1.3vw;
+  width: 30vw;
+  height: 25vw;
 }
-#Contactdes{
-
+.contact-map-address {
   /* designing for the text below the map */
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25vw;
+  padding-top: 20px;
+  width: 30vw;
+  text-align: center;
+  color: #928f8f;
+}
+.contact-form-inputDiv{
+  display: flex;
+  position: relative;
+}
+.contact-iconDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+}
+.contact-form-input {
+  border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+  height: 4vw;
+  width: 28vw;
+  margin-bottom: 1vw;
+  font-size: 1.4vw;
+  font-style: normal;
+  color:#928f8f;
+  resize: none;
+  padding-left: 4vw;
+  border: 1px solid ;
+}
+.contact-input-icon {
+  color: #0277d9;
+  width: 2.3vw;
+  height: 2.3vw;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.contact-message-box{
+  border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
+  min-height: 8vw;
+  width: 28vw;
+  margin-bottom: 1vw;
+  font-size: 1.4vw;
+  font-style: normal;
+  color:#928f8f;
+  resize: none;
+  padding-top: 0.5vw;
+  padding-left: 1vw;
+  resize: vertical;
+  border: 1px solid ;
+}
+.contact-form-submitBtn{
+  /* styling for the submit  button */
+  align-items: center;
+  background-color: #0277d9;
+  overflow-wrap: break-word;
+  font-size: 2vw;
+  margin-top: 10px;
+  border-color: #0277d9;
+  padding: 2px 4px 4px 4px;
+  width: 28vw;
+  border-radius: 1.3vw 1.3vw 1.3vw 1.3vw;
+  color: #fff;
+  cursor: pointer;
+}
 
-    font-family: 'Noto Sans';
-font-style: normal;
-font-weight: 700;
-font-size: 1.25vw;
-line-height: 44px;
-text-align: center;
-color: #928F8F;
-}
-.Contactform{
-  /* styling of the form */
-    
-    position: relative;
-    
-    top: 1.5vw;
-    left: 18vw;
-    border-image: initial;
-    padding-bottom:   20px;
-    margin-bottom: 60px;    
 
-}
-.Contactinp{
-  /* styling for the input boxes */
-    border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
-    height: 4vw;
-    width: 20vw;
-    
-    margin-bottom: 1vw;
-    
-}
-.Contactinp:hover{
-  border-color: #0277D9;
-  
-}
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -217,96 +119,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
-label {
-  /* designing for the label */
-    position: relative;
-    top: 1vw;
-    
-  }
-  
-  label > .Contacticon {
-    /* designing for the svgs inside the label */
-    position: absolute;
-    top: 0.5vw;
-    left: 1.2vw;
-    transform: translateY(-50%);
-    color: #0277D9;
-  }
-  
-  label > input {
-    /* designing for the input boxes insid the labels */
-    padding-left: calc(0.5vw + 1vw + 1vw); /* icon width + icon padding-left + desired separation*/
-    height: 2vw;
-  }
-  label>textarea{
-    padding-left: calc(0.5vw + 1vw + 1vw); /* icon width + icon padding-left + desired separation*/
-    height: auto;
-  }
-  
-  /*
-    SVG SpriteSheet
-  */
-  
-  
-  
-  
-  .Contacticon {
-    /* css for the svgs */
-    display: inline-block;
-    width: 3vw;
-    height: 3vw;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-    
-  }
-  .Contacttextareaicon{  /*css for the icon inside the description text area */
-    display: inline-block;
-    width: 3vw;
-    height: 3vw;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-    position: absolute;
-    top: -6.5vw;
-    left: 1.2vw;
-    transform: translateY(-50%);
-    color: #0277D9;
-  }
-
-  .Contactdesi{
-    /* text styling for the input and textarea */
-    resize: none;
-    font-family: 'Noto Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.5vw;
-    line-height: 4.4vw;
-    text-align: center;
-    color: #928F8F;
-    width: 28vw;
-  }
-  .Contactsubmit{
-    /* styling for the submit  button */
-    position: relative;
-    align-items: center;
-    background-color: #0277D9;
-
-    font-family: 'Noto Sans', sans-serif;
-    font-style: normal;
-    overflow-wrap: break-word;
-    font-size: 3vw;
-    margin-top: 10px;
-    border-color: #0277D9;
-    
-    width: 31vw;
-    border-radius: 1.3vw 1.3vw 1.3vw 1.3vw;
-    
-    color: #fff;
-  }
-  .Contactsubmit:hover{
-    cursor: pointer;
-  }
