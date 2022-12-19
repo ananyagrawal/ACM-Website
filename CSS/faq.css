@@ -1,29 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: white;
-}
-h1 {
+
+.faq-heading{
   text-align: center;
   margin: 2rem 0;
   font-size: 2.5rem;
   color:#1E90FF;
 }
-h2{
+.faq-ques-heading{
   text-align: center;
-  margin:2rem 0;
-  font-size:1.5rem;
+  /* margin:1rem 0; */
+  font-size:2rem;
   color:black;
 }
-
+.faq-ques-heading span{
+  font-size: 2rem;
+  color: #1E90FF;
+  font-style: normal;
+}
 .accordion {
-  width: 90%;
+  width: 75%;
   max-width: 1000px;
   margin: 4rem auto;
 }
@@ -35,7 +36,7 @@ h2{
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
 }
 .accordion-item-header {
-  padding: 0.5rem 3rem 0.5rem 5rem;
+  padding: 0.5rem 3rem 0.5rem 4rem;
   min-height: 3.5rem;
   line-height: 1.25rem;
   font-weight: bold;
@@ -51,8 +52,12 @@ h2{
   left: 1rem;
   color:#808080;
 }
+.accordion-item-header.active{
+  color: white;
+}
 .accordion-item-header.active::after {
   content: "\005E";
+  color: white;
 }
 .accordion-item-body {
   max-height: 0;
@@ -60,12 +65,12 @@ h2{
   transition: max-height 0.2s ease-out;
 }
 .accordion-item-body-content {
-  padding: 1rem 0rem 0rem 10rem;
+  padding: 1rem 0rem 0rem 4rem;
   line-height: 1.5rem;
   border-top: 1px solid;
   border-image: linear-gradient(to right, transparent, #34495e, transparent) 1;
   color:#1E90FF;
-  font-weight:bold;
+  font-weight:normal;
   padding-bottom: 12px;
 }
 
