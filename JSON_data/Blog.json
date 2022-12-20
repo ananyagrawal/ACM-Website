@@ -1,0 +1,50 @@
+[
+    {
+        "id":0,
+        "image_url":"Images/project_card_image1.webp",
+        "heading":"Head Count",
+        "content":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "github_img_link":"Images/github.svg",
+        "github_url":"#"
+    },
+    {
+        "id":1,
+        "image_url":"Images/project_card_image2.jpg",
+        "heading":"ACM App",
+        "content":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "github_img_link":"Images/github.svg",
+        "github_url":"#"
+    },
+    {
+        "id":2,
+        "image_url":"Images/project_card_image3.jpg",
+        "heading":"ACM App",
+        "content":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "github_img_link":"Images/github.svg",
+        "github_url":"#"
+    },
+    {
+        "id":3,
+        "image_url":"Images/project_card_image2.jpg",
+        "heading":"Testing 1",
+        "content":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "github_img_link":"Images/github.svg",
+        "github_url":"#"
+    },
+    {
+        "id":4,
+        "image_url":"Images/project_card_image1.webp",
+        "heading":"Testing 2",
+        "content":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "github_img_link":"Images/github.svg",
+        "github_url":"#"
+    },
+    {
+        "id":5,
+        "image_url":"Images/project_card_image3.jpg",
+        "heading":"Testing 3",
+        "content":"Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.",
+        "github_img_link":"Images/github.svg",
+        "github_url":"#"
+    }
+]
