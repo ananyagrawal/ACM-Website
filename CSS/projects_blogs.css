@@ -7,7 +7,7 @@ div{
     margin:0;
     padding:0;
 }
-.projects-heading{ /*div containing projects-text and horizontal-line*/
+.projects-heading,.blog_heading{ /*div containing projects-text and horizontal-line*/
     display:flex;
     flex-direction: row;
     color:#4789C0;
@@ -15,7 +15,7 @@ div{
     margin-left:80px;
     margin-right:80px;
 }
-.projects-text{
+.projects-text,.blog_text{
     font-size:36px;
     font-weight:bold;
 }
@@ -24,17 +24,16 @@ div{
     flex:1;
     height:0;
 }
-.project-grid{ /*Project grid*/
+.project-grid,.blog_grid{ /*Project grid*/
     margin-top:40px;
     display:grid;
     grid-template-columns:12px 1fr 1fr 1fr 20px;
     column-gap:50px;
-    margin-left:150px;
-    margin-right:150px;
+    margin-left:85px;
 }
 @media(max-width:700px) /*media query to reduce project grid to 1 column*/
 {
-    .project-grid{
+    .project-grid,.blog_grid{
         grid-template-columns: 1fr;
         row-gap:40px;
     }
@@ -61,25 +60,25 @@ div{
     color:black;
     transform: scale(1.5); /* Click effect on arrow*/
 }
-.project-card{ /*Project card*/
+.project-card,.blog_card{ /*Project card*/
     display:flex;
     flex-direction:row;
     position:relative;
     background-image: url("images/image1.webp");
     border-radius:10px;
     overflow: hidden;
-    width:100%;
+    width:30%;
     height:300px;
     box-shadow:3px 3px 5px rgba(0,0,0,0.7);
 }
-.project-img{
+.project-img,.blog_img{
     width:100%;
     height:100%;
 }
-.project-card:hover .project-img{
+.project-card:hover .project-img,.blog_card:hover .blog_img{
     opacity:0.8;
 }
-.projects-subheading{ /*Project subheading that moves to top on hover*/
+.projects-subheading,.blog_subheading{ 
     position:absolute;
     width:100%;
     top:80%;
@@ -91,10 +90,10 @@ div{
     font-weight:bold;
     transition: transform 0.8s ease-in-out;
 }
-.project-card:hover .projects-subheading{
-    transform: translateY(-600%); /*Project subheading moves on hover using translateY property*/
+.project-card:hover .projects-subheading,.blog_card:hover .blog_subheading{
+    transform: translateY(-600%); 
 }
-.project-img-hover{
+.project-img-hover,.blog-img-hover{
     position:absolute;
     top:0%;
     bottom:0%;
@@ -107,10 +106,11 @@ div{
     justify-content: center;
     padding:2% 10%;
 }
-.project-card:hover .project-img-hover{ /*Opacity of project-img-hover goes from 0 to 1 on hover*/
+.project-card:hover .project-img-hover,
+.blog_card:hover .blog-img-hover{ /*Opacity of project-img-hover goes from 0 to 1 on hover*/
     opacity:1;
 }
-.project-description{ /* Project description, opacity is initialized to 0*/
+.blog-description{ /* Project description, opacity is initialized to 0*/
     position:absolute;
     top:28%;
     left:10%;
@@ -119,7 +119,8 @@ div{
     opacity:0;
     transition:opacity 1s;
 }
-.project-card:hover .project-description{ /*Project description opacity changes on hover*/
+.project-card:hover .project-description,
+.blog_card:hover .blog-description{ /*Project description opacity changes on hover*/
     opacity:1;
 }
 .github-link{
@@ -132,7 +133,8 @@ div{
 .github-logo{
     width:30px;
 }
-.project-card:hover .github-link{
+.project-card:hover .github-link,
+.blog_card:hover .github-link{
     opacity:1;
 }
 .view-all-div{
@@ -149,5 +151,10 @@ div{
     font-size:24px;
     color:#4789C0;
     font-weight:600;
+}
+#cards_container,#blogs_container{
+    display: flex;
+    width:80vw;
+    justify-content: space-between;
 }
 
