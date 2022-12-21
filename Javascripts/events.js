@@ -45,7 +45,7 @@ document.getElementById("left").addEventListener("click", () => {
     //handing if data has end for prev;
     if (count > 0) {
         count-=2;
-        fetch('../JSON_data/Events.json')
+        fetch('JSON_data/Events.json')
             .then(response => {
                 return response.json();
             })
@@ -61,7 +61,7 @@ document.getElementById("left").addEventListener("click", () => {
     
 })
 document.getElementById("right").addEventListener("click", () => {
-    fetch('../JSON_data/Events.json')
+    fetch('JSON_data/Events.json')
         .then(response => {
             return response.json();
         })
