@@ -6,7 +6,7 @@
 let count = 0;
 async function event_data_calling() {
     
-    const request = await fetch('../JSON_data/Events.json');
+    const request = await fetch('JSON_data/Events.json');
     const data = await request.json();
     
     for (let i = 0; i < 2; i++) {
