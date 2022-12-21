@@ -6,7 +6,7 @@
 let project_count = 0;
 async function project_data_calling() {
     
-    const request = await fetch('../JSON_data/Projects.json');
+    const request = await fetch('JSON_data/Projects.json');
     const data = await request.json();
     
     for (let i = 0; i < 3; i++) {
@@ -60,7 +60,7 @@ document.getElementById("project_arrow_left").addEventListener("click", () => {
     //handing if data has end for prev;
     if (project_count > 0) {
         project_count-=3;
-        fetch('../JSON_data/Projects.json')
+        fetch('JSON_data/Projects.json')
             .then(response => {
                 return response.json();
             })
@@ -75,7 +75,7 @@ document.getElementById("project_arrow_left").addEventListener("click", () => {
     } 
 })
 document.getElementById("project_arrow_right").addEventListener("click", () => {
-    fetch('../JSON_data/Projects.json')
+    fetch('JSON_data/Projects.json')
         .then(response => {
             return response.json();
         })
