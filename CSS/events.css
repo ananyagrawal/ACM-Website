@@ -93,12 +93,13 @@ border-radius: 1.5vw 0vw 0vw 1.5vw;
     transition: transform 0.4s;
     background: #F9FCFF;;
 }
+#left,#right{
+    border:none;
+}
 #left:hover,#right:hover{
         transform: scale(1.2);
 }
 .Eventsnewev{
-/* styling for the more events anchor */
-/* border:1px solid red; */
 display: flex;
 justify-content: end;
 font-weight: 700;
@@ -118,11 +119,11 @@ a, a:visited, a:hover, a:active {
    /* disabling color change due to anchor tag */
     color: inherit;
   }
-  
-
 a{
     cursor: pointer;
     text-decoration: none;
 }
+
+
 
 
