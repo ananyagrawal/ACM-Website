@@ -19,7 +19,7 @@
 .Eventscontainer{
 width: auto;
 height: 40vh;
-background: #F9FCFF;
+
 display: flex;
 justify-content:space-around;
 align-items: center;
@@ -82,7 +82,7 @@ border-radius: 1.5vw 0vw 0vw 1.5vw;
     left: 88vw;
     top: 0.5vw;
     transition: transform 0.3s;
-    background: #F9FCFF;
+    background-color: white;
 }
 #left{
     /* styling for the left svg */
@@ -90,8 +90,8 @@ border-radius: 1.5vw 0vw 0vw 1.5vw;
     position: relative;
     left: 7vw;
     top: 0.5vw;
-    transition: transform 0.4s;
-    background: #F9FCFF;;
+    transition: transform 0.3s;
+    background-color: white;
 }
 #left,#right{
     border:none;

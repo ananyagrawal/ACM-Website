@@ -1,4 +1,7 @@
 /* ABOUT SECTION CSS CODE */
+.about-container{
+    margin-top: 32px;
+}
 .about-heading{
     display: flex;
     flex-direction: row;
