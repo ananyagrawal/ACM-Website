@@ -41,7 +41,7 @@ header
     height: 17.4rem; 
 }
 .logo1{ /* DITU ACM SC White LOGO on the left side of the blue box*/
-    content: url(Images/DITU_ACM_WhiteLogo.png);
+    content: url(/Images/DITU_ACM_WhiteLogo.png);
     height: 8.0rem;
     width: 9.0rem;
     margin-left: 1.2rem;
@@ -60,7 +60,7 @@ header
     }
 }
 .logo2{/*DITU ACM-W SC White LOGO on the right side of the blue box*/
-    content: url(Images/ACM-W_dituChap_White.png);
+    content: url(/Images/ACM-W_dituChap_White.png);
     height: 8.0rem;
     width: 9.0rem;
     margin-top: 1.8rem;
