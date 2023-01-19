@@ -35,9 +35,12 @@
 .navbar{
     font-size: 18px;
     background-color: black;
-    position: sticky;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
 }
-.nav-link > a{
+#link{
     text-decoration: none;
     color: white;
     padding-bottom: 8px;
@@ -59,3 +62,49 @@
 .active{
     background-color: #4789C0;
 }
+
+.container {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    top: 0;
+    z-index: 1;
+    background-color: #4789C0;
+}
+
+.container > button {
+    background-color: #4789C0;
+    border: none;
+
+    margin-left: 90%;
+    margin-top: 5px;
+}
+
+@media screen and (min-width: 600px) {
+    .container{
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .line {
+        display: none;
+    }
+    #none{
+        display: none;
+    }
+    .all-links > div{
+        display: block;
+        text-align: center;
+        padding: 1.2rem 1rem 1.5rem 1rem;
+    }
+    .active{
+        background-color: black;
+    }
+    .all-links {
+        display: block;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 30px;
+    }
+}
+    
