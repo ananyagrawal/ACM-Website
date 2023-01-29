@@ -74,6 +74,25 @@
   padding-bottom: 12px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px){
+  .faq-heading{
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  .faq-ques-heading{
+    font-size: 1.5rem;
+  }
+  .faq-ques-heading span{
+    font-size: 1.5rem;
+  }
+  .accordion{
+    width: 70%;
+  }
+  .accordion-item-header{
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
 @media(max-width:767px) {
   html {
     font-size: 14px;
