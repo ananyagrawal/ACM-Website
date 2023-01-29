@@ -20,6 +20,9 @@
   margin-left:80px;
   margin-right:80px;
 }
+.collab-img{
+  height: 200px;
+}
 .collabs-text{
   font-size:36px;
   font-weight:bold;
@@ -28,4 +31,23 @@
 .marquee_css{
   margin-left:80px;
   margin-right:80px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .collabs-text{
+    font-size: 24px;
+  }
+  .collabs-heading{
+    margin-left: 28px;
+  }
+  .collab_main{
+    height: 120px;
+  }
+  .collab-img{
+    height: 120px;
+  }
+  .marquee_css{
+    margin-left: 32px;
+    margin-right: 32px;
+  }
 }

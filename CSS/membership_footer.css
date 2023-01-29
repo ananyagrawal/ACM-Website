@@ -238,6 +238,21 @@ body {
     height: 250px;
     flex-direction: column;
   }
+  .counter-icon{
+    height: 32px;
+  }
+  .increasing-number{
+    font-size: 20px;
+  }
+  .section-title{
+    font-size: 16px;
+  }
+  .membership-content{
+    font-size: 12px;
+  }
+  .membership-button{
+    font-size: 14px;
+  }
   .footer-top {
     flex-direction: column;
   }

@@ -122,3 +122,44 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+/* media queries */
+@media screen and (min-width: 320px) and (max-width: 768px){
+  .contact-heading{
+    font-size: 4vw;
+  }
+  .contact-subcontainer{
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .contact-form-container{
+    margin-bottom: 20px;
+  }
+  .contact-map-container{
+    display: none;
+  }
+  .contact-iconDiv{
+    width: 7.2vw;
+    height: 7.2vw;
+  }
+  .contact-input-icon{
+    width: 3.2vw;
+    height: 3.2vw;
+  }
+  .contact-form-input{
+    width: 72vw;
+    height: 7.2vw;
+    font-size: 2.4vw;
+    padding-left: 6.4vw;
+  }
+  .contact-message-box{
+    width: 72vw;
+    min-height: 18vw;
+  }
+  .contact-form-submitBtn{
+    width: 72vw;
+    height: 7.2vw;
+    font-size: 3.2vw;
+  }
+}
