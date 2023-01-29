@@ -27,9 +27,9 @@
 
     <!-- Navbar Section -->
     <nav class="navbar">
-        <div class="container">
+        <div class="nav-container">
           <button id="hamburger">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#4789C0" class="bi bi-list" viewBox="0 0 16 16" >
               <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
             </svg>
           </button>
@@ -132,8 +132,10 @@
 
     <div class="about-container" id="about-nav-link">
       <!--ABOUT heading(including <marquee> attribute for the animation)-->
-        <div class="about-heading"><marquee  width="20%">
-              <h1 class="about-h1-text">About&#160</h1></marquee>
+        <div class="about-heading"> 
+          <!-- <marquee  width="20%"> --> 
+              <h1 class="about-h1-text">About&#160</h1>
+            <!-- </marquee> -->
               <hr class="about-line">
         </div>
         <!--Below division contains one para including image-->
@@ -156,7 +158,7 @@
         <!--Below division contains one para including image-->
         <div class="about-sub-container">
             <!--This division includes Text code-->
-            <div class="about-description-container">
+            <div class="about-description-container" id="about-first">
               <div class="about-description-text">
                 <h2 class="about-sub-heading">Association for Computing Machinery</h2>
                 <p class="about-text-paragraph">
@@ -166,7 +168,7 @@
               </div>
             </div>
             <!--This division includes image code-->
-            <div class="about-img-container">
+            <div class="about-img-container" id="about-second">
               <img class="about-logo-image" src="Images/ACM Chapter LOGO .png">
             </div>
         </div>
@@ -190,7 +192,7 @@
         <!--Below division contains one para including image-->
         <div class="about-sub-container">
             <!--This division includes Text code-->
-            <div class="about-description-container">
+            <div class="about-description-container" id="about-one">
               <div class="about-description-text">
                 <h2 class="about-sub-heading">DITU ACM-W Student Chapter</h2>
                 <p class="about-text-paragraph">
@@ -200,7 +202,7 @@
               </div>
             </div>
             <!--This division includes image code-->
-            <div id="ditu" class="about-img-container">
+            <div class="about-img-container" id="about-two">
                 <img class="about-logo-image" src="Images/ACM-W_NewLogo.jpg">
             </div>
         </div>
@@ -440,35 +442,37 @@
 
     <!-- FAQ Section -->
 
-    <h1 class="faq-heading">F.A.Q</h1>
-    <h2 class="faq-ques-heading">Frequently Asked <span>Questions</span></h2>
+    <div class="faq-container">
+      <h1 class="faq-heading">F.A.Q</h1>
+      <h2 class="faq-ques-heading">Frequently Asked <span>Questions</span></h2>
 
-    <div class="accordion">
-      <div class="accordion-item">
-        <div class="accordion-item-header">How to join DITU ACM SC?</div>
-        <div class="accordion-item-body">
-          <div class="accordion-item-body-content">Join DITU ACM Content</div>
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-item-header">How to join DITU ACM SC?</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">Join DITU ACM Content</div>
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-item-header">How many teams are there?</div>
-        <div class="accordion-item-body">
-          <div class="accordion-item-body-content">Teams Content</div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">How many teams are there?</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">Teams Content</div>
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-item-header">What are floating teams?</div>
-        <div class="accordion-item-body">
-          <div class="accordion-item-body-content">Floating teams content</div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">What are floating teams?</div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">Floating teams content</div>
+          </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <div class="accordion-item-header">
-          What does research and devlopment team do?
-        </div>
-        <div class="accordion-item-body">
-          <div class="accordion-item-body-content">
-            Research and devlopment team content.
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            What does research and devlopment team do?
+          </div>
+          <div class="accordion-item-body">
+            <div class="accordion-item-body-content">
+              Research and devlopment team content.
+            </div>
           </div>
         </div>
       </div>
