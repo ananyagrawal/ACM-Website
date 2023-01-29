@@ -2,14 +2,14 @@
 
 //Rendering data of the event section from here only;
 // import data from "../JSON_data/Events.json";
-// console.log(data);
+
 let count = 0;
 async function event_data_calling() {
     
     const request = await fetch('JSON_data/Events.json');
     const data = await request.json();
     
-    for (let i = 0; i < 2; i++) {
+    for (let i = 0; i < data.length; i++) {
         const container = document.createElement("a");
         container.href = "#";
         const main = document.createElement("div");
@@ -41,38 +41,35 @@ async function event_data_calling() {
 }
 event_data_calling();
 
-document.getElementById("left").addEventListener("click", () => {
-    //handing if data has end for prev;
-    if (count > 0) {
-        count-=2;
-        fetch('JSON_data/Events.json')
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                for (let i = 0; i < 2; i++) {
-                    document.getElementsByClassName("poster_class")[i].src = data[i -count].image_url;
-                    document.getElementsByClassName("Eventsh")[i].innerHTML = data[i - count].heading;
-                    document.getElementsByClassName("con_class")[i].innerHTML = data[i + count].content;
-                }
-            }); 
-    }
-    
-    
-})
-document.getElementById("right").addEventListener("click", () => {
-    fetch('JSON_data/Events.json')
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            if (count + 2 < data.length) {
-                count += 2;
-                for (let i = 0; i < 2; i++) {
-                    document.getElementsByClassName("poster_class")[i].src = data[i + count].image_url;
-                    document.getElementsByClassName("Eventsh")[i].innerHTML = data[i + count].heading;
-                    document.getElementsByClassName("con_class")[i].innerHTML = data[i + count].content;
-                }
-            }
-        });
-});
+
+
+///click on right button;
+var button = document.getElementById("right");
+button.onclick = function () {
+    var container = document.getElementById("event_cont");
+    sideScroll(container, "right", 10, 1000, 600);
+};
+
+// click on left button;
+var back = document.getElementById("left");
+back.onclick = function () {
+    var container = document.getElementById("event_cont");
+    sideScroll(container, "left", 10, 1000, 600);
+}
+
+
+//function to scroll button;
+function sideScroll(element, direction, speed, distance, step) {
+    scrollAmount = 0;
+    var slideTimer = setInterval(function () {
+        if (direction == "left") {
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}

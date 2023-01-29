@@ -9,7 +9,7 @@ async function project_data_calling() {
     const request = await fetch('JSON_data/Projects.json');
     const data = await request.json();
     
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < data.length; i++) {
         const container = document.createElement("div");
         container.setAttribute("class", "project-card");
 
