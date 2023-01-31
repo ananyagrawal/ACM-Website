@@ -9,7 +9,7 @@ async function blog_data_calling() {
     const request = await fetch('JSON_data/Blog.json');
     const data = await request.json();
     
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < data.length; i++) {
         const container_1 = document.createElement("div");
         container_1.setAttribute("class", "blog_card");
         const img_cont_1= document.createElement("img");
@@ -54,38 +54,70 @@ async function blog_data_calling() {
 }
 blog_data_calling();
 
-document.getElementById("blog_arrow_left").addEventListener("click", () => {
-    //handing if data has end for prev;
-    if (project_count > 0) {
-        project_count-=3;
-        fetch('JSON_data/Projects.json')
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                for (let i = 0; i < 3; i++) {
-                    document.getElementsByClassName("blog_img")[i].src = data[i - project_count].image_url;
-                    document.getElementsByClassName("blog_subheading")[i].innerHTML = data[i - project_count].heading;
-                    document.getElementsByClassName("blog-description")[i].innerHTML = data[i - project_count].content;
-                    document.getElementsByClassName("git_link")[i].href = data[i - project_count].github_url;
-                }
-            }); 
-    } 
-})
-document.getElementById("blog_arrow_right").addEventListener("click", () => {
-    fetch('JSON_data/Projects.json')
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            if (project_count + 3 < data.length) {
-                project_count += 3;
-                for (let i = 0; i < 3; i++) {
-                    document.getElementsByClassName("blog_img")[i].src = data[i + project_count].image_url;
-                    document.getElementsByClassName("blog_subheading")[i].innerHTML = data[i + project_count].heading;
-                    document.getElementsByClassName("blog-description")[i].innerHTML = data[i + project_count].content;
-                    document.getElementsByClassName("git_link")[i].href = data[i + project_count].github_url;
-                }
-            }
-        });
-});
+// document.getElementById("blog_arrow_left").addEventListener("click", () => {
+//     //handing if data has end for prev;
+//     if (project_count > 0) {
+//         project_count-=3;
+//         fetch('JSON_data/Projects.json')
+//             .then(response => {
+//                 return response.json();
+//             })
+//             .then(data => {
+//                 for (let i = 0; i < 3; i++) {
+//                     document.getElementsByClassName("blog_img")[i].src = data[i - project_count].image_url;
+//                     document.getElementsByClassName("blog_subheading")[i].innerHTML = data[i - project_count].heading;
+//                     document.getElementsByClassName("blog-description")[i].innerHTML = data[i - project_count].content;
+//                     document.getElementsByClassName("git_link")[i].href = data[i - project_count].github_url;
+//                 }
+//             }); 
+//     } 
+// })
+// document.getElementById("blog_arrow_right").addEventListener("click", () => {
+//     fetch('JSON_data/Projects.json')
+//         .then(response => {
+//             return response.json();
+//         })
+//         .then(data => {
+//             if (project_count + 3 < data.length) {
+//                 project_count += 3;
+//                 for (let i = 0; i < 3; i++) {
+//                     document.getElementsByClassName("blog_img")[i].src = data[i + project_count].image_url;
+//                     document.getElementsByClassName("blog_subheading")[i].innerHTML = data[i + project_count].heading;
+//                     document.getElementsByClassName("blog-description")[i].innerHTML = data[i + project_count].content;
+//                     document.getElementsByClassName("git_link")[i].href = data[i + project_count].github_url;
+//                 }
+//             }
+//         });
+// });
+
+
+///click on right button;
+var button = document.getElementById("blog_arrow_right");
+button.onclick = function () {
+    var container = document.getElementById("blogs_container");
+    sideScroll(container, "right", 10, 1000, 600);
+};
+
+// click on left button;
+var back = document.getElementById("blog_arrow_left");
+back.onclick = function () {
+    var container = document.getElementById("blogs_container");
+    sideScroll(container, "left", 10, 1000, 600);
+}
+
+
+//function to scroll button;
+function sideScroll(element, direction, speed, distance, step) {
+    scrollAmount = 0;
+    var slideTimer = setInterval(function () {
+        if (direction == "left") {
+            element.scrollLeft -= step;
+        } else {
+            element.scrollLeft += step;
+        }
+        scrollAmount += step;
+        if (scrollAmount >= distance) {
+            window.clearInterval(slideTimer);
+        }
+    }, speed);
+}
