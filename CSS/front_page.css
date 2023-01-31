@@ -278,7 +278,7 @@ span{/*Setting properties for < and > symbol which is present before and after t
         justify-content: center;
         align-items: center;
         padding: 1.0rem;
-        border: 1px solid red;
+        overflow-x: scroll;
     }
     .leftgallerybttn, .rightgallerybttn{
         /* display: none; */
