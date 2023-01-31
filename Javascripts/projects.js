@@ -2,7 +2,8 @@
 
 //Rendering data of the event section from here only;
 // import data from "../JSON_data/Events.json";
-// console.log(data);
+
+
 let project_count = 0;
 async function project_data_calling() {
     
@@ -10,7 +11,8 @@ async function project_data_calling() {
     const data = await request.json();
     
     for (let i = 0; i < data.length; i++) {
-        const container = document.createElement("div");
+        const container = document.createElement("a");
+        container.href="#";
         container.setAttribute("class", "project-card");
 
 
@@ -51,43 +53,58 @@ async function project_data_calling() {
         container.appendChild(div_cont);
 
 
-        cards_container.appendChild(container);        
+        document.getElementById("cards_container").appendChild(container);        
     }
 }
 project_data_calling();
 
-document.getElementById("project_arrow_left").addEventListener("click", () => {
-    //handing if data has end for prev;
-    if (project_count > 0) {
-        project_count-=3;
-        fetch('JSON_data/Projects.json')
-            .then(response => {
-                return response.json();
-            })
-            .then(data => {
-                for (let i = 0; i < 3; i++) {
-                    document.getElementsByClassName("project-img")[i].src = data[i - project_count].image_url;
-                    document.getElementsByClassName("projects-subheading")[i].innerHTML = data[i - project_count].heading;
-                    document.getElementsByClassName("project-description")[i].innerHTML = data[i - project_count].content;
-                    document.getElementsByClassName("git_link")[i].href = data[i - project_count].github_url;
-                }
-            }); 
-    } 
-})
-document.getElementById("project_arrow_right").addEventListener("click", () => {
-    fetch('JSON_data/Projects.json')
-        .then(response => {
-            return response.json();
-        })
-        .then(data => {
-            if (project_count + 3 < data.length) {
-                project_count += 3;
-                for (let i = 0; i < 3; i++) {
-                    document.getElementsByClassName("project-img")[i].src = data[i + project_count].image_url;
-                    document.getElementsByClassName("projects-subheading")[i].innerHTML = data[i + project_count].heading;
-                    document.getElementsByClassName("project-description")[i].innerHTML = data[i + project_count].content;
-                    document.getElementsByClassName("git_link")[i].href = data[i + project_count].github_url;
-                }
-            }
-        });
-});
+// document.getElementById("project_arrow_left").addEventListener("click", () => {
+//     //handing if data has end for prev;
+//     if (project_count > 0) {
+//         project_count-=3;
+//         fetch('JSON_data/Projects.json')
+//             .then(response => {
+//                 return response.json();
+//             })
+//             .then(data => {
+//                 for (let i = 0; i < 3; i++) {
+//                     document.getElementsByClassName("project-img")[i].src = data[i - project_count].image_url;
+//                     document.getElementsByClassName("projects-subheading")[i].innerHTML = data[i - project_count].heading;
+//                     document.getElementsByClassName("project-description")[i].innerHTML = data[i - project_count].content;
+//                     document.getElementsByClassName("git_link")[i].href = data[i - project_count].github_url;
+//                 }
+//             }); 
+//     } 
+// })
+// document.getElementById("project_arrow_right").addEventListener("click", () => {
+//     fetch('JSON_data/Projects.json')
+//         .then(response => {
+//             return response.json();
+//         })
+//         .then(data => {
+//             if (project_count + 3 < data.length) {
+//                 project_count += 3;
+//                 for (let i = 0; i < 3; i++) {
+//                     document.getElementsByClassName("project-img")[i].src = data[i + project_count].image_url;
+//                     document.getElementsByClassName("projects-subheading")[i].innerHTML = data[i + project_count].heading;
+//                     document.getElementsByClassName("project-description")[i].innerHTML = data[i + project_count].content;
+//                     document.getElementsByClassName("git_link")[i].href = data[i + project_count].github_url;
+//                 }
+//             }
+//         });
+// });
+
+
+///click on right button;
+var button = document.getElementById("project_arrow_right");
+button.onclick = function () {
+    var container = document.getElementById("cards_container");
+    sideScroll(container, "right", 10, 1000, 600);
+};
+
+// click on left button;
+var back = document.getElementById("project_arrow_left");
+back.onclick = function () {
+    var container = document.getElementById("cards_container");
+    sideScroll(container, "left", 10, 1000, 600);
+}
