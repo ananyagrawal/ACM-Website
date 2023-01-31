@@ -127,11 +127,14 @@ span{/*Setting properties for < and > symbol which is present before and after t
     to { border-color: #ffffff; }
 }
 .Gallery{/*setting properties for the gallery section*/
+    height: 43vh;
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: nowrap; */
     justify-content: space-around;
     padding: 1.0rem;
+}
+#gallery_imgs{
+    display: flex;
+    overflow: hidden;
 }
 .item{/*setting properties for the gallery images present inside the gallery section*/
     margin: 1.4rem;
@@ -145,6 +148,7 @@ span{/*Setting properties for < and > symbol which is present before and after t
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     max-width: 100%;
+    margin-right: 4.5vw;
 }
 .item:hover{
     box-shadow: .2rem .2rem .2rem #0db6cc;/*to shine brighter with bluish light on being hovered*/
