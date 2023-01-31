@@ -39,11 +39,14 @@ border-radius: 1.5vw 1.5vw 1.5vw 1.5vw;
 transition: transform.5s;
 display: flex;
 flex-direction: row;
+margin: 0 10px;
 }
 .Eventscard:hover{
     /* hover effect for card 1 */
-    transform: scale(1.12);
+    transform: scale(1.1);
     box-shadow: 0.5vw 0.5vw 0.5vw  #647691;
+    /* margin-top: 5vh; */
+    /* margin-bottom: 5vh; */
 }
 .Eventstext{
     font-size: 0.8vw;
@@ -130,6 +133,28 @@ a{
 #event_cont{
     overflow: hidden;
 }
-.Eventscard{
-    margin: 0 10px;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .events-text{
+        font-size: 24px;
+    }
+    .events-heading{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .Eventscontainer{
+        height: auto;
+    }
+    .Eventscard{
+        width: 60vw;
+        height: 45vw;
+    }
+    .Eventscards{
+        top: -25vw;
+    }
+    #con{
+        font-size: 2vw;
+    }
+    .Eventstext{
+        font-size: 2vw;
+    }
 }
