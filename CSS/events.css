@@ -42,8 +42,10 @@ flex-direction: row;
 }
 .Eventscard:hover{
     /* hover effect for card 1 */
-    transform: scale(1.12);
+    transform: scale(1.1);
     box-shadow: 0.5vw 0.5vw 0.5vw  #647691;
+    /* margin-top: 5vh; */
+    /* margin-bottom: 5vh; */
 }
 .Eventstext{
     font-size: 0.8vw;
