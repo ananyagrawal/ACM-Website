@@ -190,6 +190,23 @@ span{/*Setting properties for < and > symbol which is present before and after t
     html{
         font-size: 75%;
         }
+        .leftgallerybttn, .rightgallerybttn{
+            display: flex;
+            align-items: center;
+            margin-bottom: 3vh;
+        }
+        .item{
+            margin-left: 2.2vw;
+        }
+        .Gallery{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .transbox3{
+            height: 30rem;
+            
+        }
 }
 /* For ipad */
 @media (max-width:1024px) and (min-width: 769px)
@@ -197,12 +214,26 @@ span{/*Setting properties for < and > symbol which is present before and after t
     html{
         font-size: 55%;
         }
+        .leftgallerybttn, .rightgallerybttn{
+            display: flex;
+            align-items: center;
+            margin-bottom: 25vh;
+        }
+        .item{
+            margin-left: 2vw;
+        }
+       
 }
 
 @media (max-width:768px) and (min-width: 481px)
 {
     html{
         font-size: 35%;
+    }
+    .leftgallerybttn, .rightgallerybttn{
+        display: flex;
+        align-items: center;
+        margin-bottom: 14vh;
     }
 }
 /* For mobile devivces */
@@ -215,7 +246,7 @@ span{/*Setting properties for < and > symbol which is present before and after t
         height: 11rem;
     }
     .transbox3{
-        height: 60rem;
+        height: 25rem;
     }
     .heading1, .heading2{
         margin-right: 2.1rem;
@@ -243,12 +274,13 @@ span{/*Setting properties for < and > symbol which is present before and after t
     }
     .Gallery{/*setting properties for the gallery section*/
         display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        /* flex-direction: column; */
+        justify-content: center;
         align-items: center;
         padding: 1.0rem;
+        border: 1px solid red;
     }
     .leftgallerybttn, .rightgallerybttn{
-        display: none;
+        /* display: none; */
     }
 }
