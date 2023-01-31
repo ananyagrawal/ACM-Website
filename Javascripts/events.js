@@ -9,9 +9,11 @@ async function event_data_calling() {
     const request = await fetch('JSON_data/Events.json');
     const data = await request.json();
     
+
     for (let i = 0; i < data.length; i++) {
         const container = document.createElement("a");
         container.href = "#";
+        container.setAttribute("class","event_card_holding")
         const main = document.createElement("div");
         main.setAttribute("class", "Eventscard");
         const img_cont = document.createElement("img");
