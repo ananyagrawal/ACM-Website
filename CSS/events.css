@@ -128,7 +128,9 @@ a{
 }
 
 
-
+.event_card_holding{
+    margin: 0 1.5vw;
+}
 
 #event_cont{
     overflow: hidden;
