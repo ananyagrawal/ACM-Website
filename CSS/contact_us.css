@@ -159,7 +159,7 @@ input[type="number"] {
   }
   .contact-message-box{
     width: 80vw;
-    min-height: 18vw;
+    min-height: 24vw;
     font-size: 3.5vw;
   }
   .contact-form-submitBtn{
