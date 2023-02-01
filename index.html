@@ -107,15 +107,20 @@
       <div class="Gallery">
 
         <!-- left/previous arrow button of the gallery -->
-        <button class="leftgallerybttn"><img src="Images/leftarrow.png" alt=""></button>
+        <button class="leftgallerybttn" id="gallery_left_btn">
+          <img src="Images/leftarrow.png" alt="">
+        </button>
 
-        <img class="item" src="Images/img1.jpg" alt=""><!--Gallery Image_1 -->
-        <img class="item" src="Images/img2.jpg" alt=""><!--Gallery Image_2 -->
-        <img class="item" src="Images/img3.jpg" alt=""><!--Gallery Image_3 -->
-        <img class="item" src="Images/img4.jpg" alt=""><!--Gallery Image_4 -->
+        <div id="gallery_imgs">
+          
+        </div>
+
+        
 
         <!-- right/next arrow button of the gallery -->
-        <button class="rightgallerybttn"><img src="Images/rightarrow.png" alt=""></button>
+        <button class="rightgallerybttn" id="gallery_right_btn">
+          <img src="Images/rightarrow.png" alt="">
+        </button>
 
       </div><!--closing Gallery div-->
 
@@ -724,6 +729,7 @@
        <script  src="./Javascripts/events.js"></script>
        <script  src="./Javascripts/projects.js"></script>
        <script  src="./Javascripts/blog.js"></script>
+       <script src="./Javascripts/gallery.js"></script>
 </body>
 
 </html>
